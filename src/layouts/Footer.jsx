@@ -91,8 +91,11 @@ export default function Footer() {
         <div className="flex  flex-col gap-[10px]">
           <h1 className="text-[14px] font-[500]">CONTACT INFO</h1>
           <ul className="text-[12px] space-y-[10px]">
-            <li className="flex ju items-center gap-[5px]">
-              <span>
+            <li className="flex ju items-center gap-[5px]"
+              onClick={() => (window.location.href = "tel:+91 9551114411")}
+            >
+              <span
+              >
                 <svg
                   width="16"
                   height="16"
@@ -155,11 +158,11 @@ export default function Footer() {
           </ul>
         </div>
       </footer>
-      {/* <div className="w-full p-2 bg-gray-200 dark:bg-gray-800 text-center">
+      <div className="w-full p-2 bg-gray-200 dark:bg-gray-800 text-center">
         <p className="text-sm">
           © {new Date().getFullYear()} Chennai-Cab. All rights reserved.
         </p>
-      </div> */}
+      </div>
     </div>
   );
 }

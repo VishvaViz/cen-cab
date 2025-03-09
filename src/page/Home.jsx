@@ -21,7 +21,10 @@ import BudgetCabCarousel from "../component/BugetCabCarousel";
 import { fadeSlideUp } from "../component/TrasitionAnimation";
 
 import PageTransition from "../component/PageTrasition";
+
+import { useNavigate } from "react-router-dom";
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <PageTransition
      variants={fadeSlideUp}
@@ -45,6 +48,7 @@ export default function Home() {
                 textSize={"18px"}
                 w={"120px"}
                 h={"35px"}
+                onClick={() => navigate("/contact")}
               />
             </div>
             <div />
@@ -117,6 +121,7 @@ export default function Home() {
               textSize={"16px"}
               w={"130px"}
               h={"30px"}
+              onClick={() => navigate("/contact")}
             />
             <div>
               <img
@@ -147,6 +152,7 @@ export default function Home() {
                 textSize={"14px"}
                 w={"120px"}
                 h={"30px"}
+                onClick={() => navigate("/contact")}
               />
               <h1 className="text-[12px]">Wherever you go, well help you.</h1>
             </div>
@@ -208,6 +214,7 @@ export default function Home() {
                 textSize={"12px"}
                 w={"150px"}
                 h={"30px"}
+                onClick={() => navigate("/contact")}
               />
               <div>
                 <img

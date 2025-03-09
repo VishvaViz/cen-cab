@@ -4,12 +4,243 @@ import React from "react";
 import Footer from "../layouts/Footer";
 export default function Contact() {
   const dateInputRef = React.useRef(null);
+  const timeInputRef = React.useRef(null);
   return (
     <div>
-    <div className="w-full h-full  p-[85px]">
-      <div className="flex gap-[170px] items-center ">
-        <div className="flex flex-col h-[500px]  gap-[20px] ">
-          <div className="bg-black w-[450px] h-[50px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
+      <div className="w-full h-full  p-[85px]">
+        <div className=" gap-[170px] items-center hidden lg:flex md:flex  ">
+          <div className="flex flex-col h-[500px]  gap-[20px] ">
+            <div className="bg-black w-[450px] h-[50px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
+              <div className="text-white w-[25px] h-[25px] pl-[10px] pt-[5px]">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.8847 16.5217C17.6891 16.4672 16.4523 15.9918 17.2251 13.9885H17.214C19.2286 12.2192 20.7681 9.37219 20.7681 6.56924C20.7681 2.25936 17.4072 0 13.5012 0C9.59275 0 6.25037 2.25831 6.25037 6.56924C6.25037 9.38373 7.78127 12.2423 9.80811 14.0074C10.5982 15.7746 9.18542 16.4304 8.89006 16.5228C4.79945 17.7842 0 20.0834 0 22.3533V23.2043C0 26.2969 7.03181 27 13.5394 27C20.0568 27 27 26.2969 27 23.2043V22.3533C27 20.0152 22.1772 17.7338 17.8847 16.5217Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <input
+                className="w-[400px] h-[40px] outline-none text-white placeholder:text-white font-inter font-[200] p-[10px]"
+                placeholder="Name"
+              />
+            </div>
+            <div className="bg-black w-[450px] h-[50px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
+              <div className="text-[#DFDFDF] w-[25px] h-[25px] pl-[10px] pt-[5px]">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.6347 26.9998C20.458 26.9998 18.8051 26.5743 16.33 25.1917C13.3202 23.5042 10.9922 21.9462 7.99868 18.9611C5.11247 16.0773 3.70794 14.2102 1.74221 10.6338C-0.478516 6.59584 -0.0999567 4.4792 0.32321 3.57457C0.827152 2.49335 1.57101 1.84667 2.53248 1.20481C3.07859 0.84708 3.65651 0.540422 4.2589 0.28873C4.31918 0.262814 4.37524 0.238104 4.42528 0.215805C4.72366 0.0814061 5.17577 -0.121699 5.74843 0.0952679C6.1306 0.238707 6.47179 0.532215 7.00587 1.05957C8.10116 2.13958 9.59792 4.5449 10.1501 5.72616C10.5208 6.52231 10.7661 7.04785 10.7668 7.63728C10.7668 8.32735 10.4195 8.85952 9.99818 9.43388C9.91921 9.54177 9.84085 9.64482 9.76489 9.74487C9.30616 10.3476 9.20549 10.5217 9.2718 10.8327C9.40623 11.4577 10.4087 13.3182 12.0561 14.9617C13.7036 16.6052 15.5108 17.5442 16.1383 17.678C16.4626 17.7473 16.6405 17.6425 17.2625 17.1675C17.3518 17.0994 17.4434 17.0289 17.5392 16.9584C18.1818 16.4805 18.6894 16.1424 19.3633 16.1424H19.3669C19.9535 16.1424 20.4556 16.3967 21.2875 16.8162C22.3725 17.3634 24.8506 18.8406 25.9375 19.9369C26.4661 20.4697 26.7609 20.8096 26.905 21.1911C27.122 21.7654 26.9176 22.2156 26.7844 22.517C26.7621 22.567 26.7374 22.6219 26.7115 22.6827C26.4577 23.2839 26.1492 23.8605 25.7898 24.4052C25.149 25.3635 24.4998 26.1054 23.4159 26.6098C22.8594 26.8731 22.2503 27.0064 21.6347 26.9998Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <input
+                className="w-[400px] h-[40px] outline-none text-[#DFDFDF] placeholder:text-[#DFDFDF] font-inter font-[200] p-[10px]"
+                placeholder="Mobile number"
+              />
+            </div>
+            <div className="bg-black w-[450px] h-[180px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
+              <div className="text-[#DFDFDF] w-[40px] h-[155px] pl-[10px] pt-[5px] "></div>
+              <div className="flex flex-col gap-[1px]">
+                <div className="flex flex-col gap-[1px]">
+                  <span className="text-white font-inter font-[200] text-[14px]">
+                    From
+                  </span>
+                  <input
+                    className="w-[290px] h-[40px] text-[#DFDFDF] placeholder:text-[#DFDFDF] font-inter font-[200] outline-none"
+                    placeholder="Your Location"
+                  />
+                </div>
+                <div className="w-[330px] h-[1px] bg-white" />
+                <div className="flex flex-col gap-[1px]">
+                  <span className="text-white font-inter font-[200] text-[14px]">
+                    To
+                  </span>
+                  <input
+                    className="w-[290px] h-[40px] text-[#DFDFDF] placeholder:text-[#DFDFDF] font-inter font-[200] outline-none"
+                    placeholder=" Designation"
+                  />
+                </div>
+              </div>
+              <div className="text-[#DFDFDF] w-[40px] h-[155px] pl-[10px] pt-[5px] "></div>
+            </div>
+            <div className="w-[450px] flex justify-between">
+              <div className="bg-black w-[210px] h-[45px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
+                <div
+                  className="text-[#DFDFDF] w-[25px] h-[25px] pl-[10px] pt-[5px] cursor-pointer"
+                  onClick={() => dateInputRef.current.showPicker()}
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 31 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.27941 0C7.66554 0 8.03584 0.153387 8.30888 0.426418C8.58191 0.699449 8.73529 1.06976 8.73529 1.45588V2.91176H21.3529V1.45588C21.3529 1.06976 21.5063 0.699449 21.7794 0.426418C22.0524 0.153387 22.4227 0 22.8088 0C23.1949 0 23.5653 0.153387 23.8383 0.426418C24.1113 0.699449 24.2647 1.06976 24.2647 1.45588V2.92729C24.5598 2.93506 24.8348 2.94929 25.0897 2.97C25.8274 3.02824 26.5184 3.16024 27.1726 3.49412C28.1772 4.00595 28.9941 4.82275 29.5059 5.82741C29.8398 6.48159 29.9718 7.17265 30.03 7.91029C30.0882 8.61882 30.0882 9.48265 30.0882 10.5212V25.3906C30.0882 26.4291 30.0882 27.2929 30.03 28.0015C29.9718 28.7391 29.8398 29.4302 29.5059 30.0844C28.9946 31.0887 28.1785 31.9055 27.1745 32.4176C26.5184 32.7515 25.8274 32.8835 25.0897 32.9418C24.3812 33 23.5174 33 22.4808 33H7.60941C6.57088 33 5.70706 33 4.99853 32.9418C4.26088 32.8835 3.56982 32.7515 2.91565 32.4176C1.91157 31.9068 1.09484 31.0915 0.582353 30.0882C0.248471 29.4321 0.116471 28.7411 0.0582357 28.0034C4.08577e-07 27.2949 0 26.4311 0 25.3945V10.5212C0 9.48265 4.08577e-07 8.61882 0.0582357 7.91029C0.116471 7.17265 0.248471 6.48159 0.582353 5.82741C1.09418 4.82275 1.91098 4.00595 2.91565 3.49412C3.56982 3.16024 4.26088 3.02824 4.99853 2.97C5.25347 2.94929 5.52847 2.93506 5.82353 2.92729V1.45588C5.82353 1.26469 5.86119 1.07538 5.93435 0.89874C6.00752 0.722104 6.11476 0.561609 6.24995 0.426418C6.38514 0.291227 6.54563 0.183987 6.72227 0.110822C6.89891 0.0376574 7.08822 0 7.27941 0ZM27.1765 13.5882H2.91176V25.3323C2.91176 26.4427 2.91176 27.1901 2.96029 27.7627C3.00494 28.3218 3.08647 28.5877 3.17576 28.7624C3.40871 29.2205 3.77947 29.5913 4.23759 29.8242C4.41229 29.9135 4.67824 29.9951 5.23535 30.0397C5.80994 30.0863 6.55535 30.0882 7.66765 30.0882H22.4206C23.5309 30.0882 24.2783 30.0882 24.8509 30.0397C25.41 29.9951 25.6759 29.9135 25.8506 29.8242C26.308 29.5915 26.6797 29.2197 26.9125 28.7624C27.0018 28.5877 27.0833 28.3218 27.1279 27.7627C27.1745 27.1901 27.1765 26.4427 27.1765 25.3323V13.5882ZM12.1324 7.27941C11.7462 7.27941 11.3759 7.4328 11.1029 7.70583C10.8299 7.97886 10.6765 8.34917 10.6765 8.73529C10.6765 9.12142 10.8299 9.49173 11.1029 9.76476C11.3759 10.0378 11.7462 10.1912 12.1324 10.1912H17.9559C18.342 10.1912 18.7123 10.0378 18.9853 9.76476C19.2584 9.49173 19.4118 9.12142 19.4118 8.73529C19.4118 8.34917 19.2584 7.97886 18.9853 7.70583C18.7123 7.4328 18.342 7.27941 17.9559 7.27941H12.1324Z"
+                      fill="#F0F0F0"
+                    />
+                  </svg>
+                </div>
+                <input
+                  ref={dateInputRef}
+                  type="date"
+                  className="w-[400px] h-[40px] outline-none text-[#DFDFDF] placeholder:text-[#DFDFDF] font-inter font-[200] p-[10px]"
+                  placeholder={`${new Date().toLocaleDateString()}`}
+                  min={new Date().toISOString().split("T")[0]}
+                  max={
+                    new Date(
+                      new Date().setFullYear(new Date().getFullYear() + 99)
+                    )
+                      .toISOString()
+                      .split("T")[0]
+                  }
+                />
+              </div>
+              <div className="bg-black w-[210px] h-[45px] rounded-[16px] p-[5px] flex items-center gap-[10px] cursor-pointer">
+                <div className="text-[#DFDFDF] w-[25px] h-[25px] pl-[10px] pt-[5px]"
+                  onClick={() => timeInputRef.current.showPicker()}
+                  >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 30 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.8895 32.1586L15.873 32.1617L15.7665 32.2146L15.7365 32.2207L15.7155 32.2146L15.609 32.1617C15.593 32.1566 15.581 32.1591 15.573 32.1692L15.567 32.1843L15.5415 32.8318L15.549 32.8621L15.564 32.8817L15.72 32.9937L15.7425 32.9997L15.7605 32.9937L15.9165 32.8817L15.9345 32.8575L15.9405 32.8318L15.915 32.1859C15.911 32.1697 15.9025 32.1606 15.8895 32.1586ZM16.287 31.9877L16.2675 31.9907L15.99 32.1314L15.975 32.1465L15.9705 32.1632L15.9975 32.8137L16.005 32.8318L16.017 32.8424L16.3185 32.9831C16.3375 32.9881 16.352 32.9841 16.362 32.971L16.368 32.9498L16.317 32.021C16.312 32.0028 16.302 31.9917 16.287 31.9877ZM15.2145 31.9907C15.2079 31.9867 15.2 31.9854 15.1925 31.987C15.1849 31.9887 15.1783 31.9933 15.174 31.9998L15.165 32.021L15.114 32.9498C15.115 32.968 15.1235 32.9801 15.1395 32.9861L15.162 32.9831L15.4635 32.8424L15.4785 32.8303L15.4845 32.8137L15.51 32.1632L15.5055 32.145L15.4905 32.1299L15.2145 31.9907Z"
+                      fill="#F0F0F0"
+                    />
+                    <path
+                      d="M15 0C23.2845 0 30 6.77276 30 15.1279C30 23.483 23.2845 30.2558 15 30.2558C6.7155 30.2558 0 23.483 0 15.1279C0 6.77276 6.7155 0 15 0ZM15 3.02558C11.8174 3.02558 8.76515 4.30064 6.51472 6.57027C4.26428 8.83989 3 11.9182 3 15.1279C3 18.3376 4.26428 21.4159 6.51472 23.6855C8.76515 25.9552 11.8174 27.2302 15 27.2302C18.1826 27.2302 21.2348 25.9552 23.4853 23.6855C25.7357 21.4159 27 18.3376 27 15.1279C27 11.9182 25.7357 8.83989 23.4853 6.57027C21.2348 4.30064 18.1826 3.02558 15 3.02558ZM15 6.05116C15.3674 6.05121 15.722 6.18724 15.9966 6.43346C16.2711 6.67969 16.4465 7.01897 16.4895 7.38695L16.5 7.56395V14.5016L20.5605 18.5967C20.8295 18.869 20.9857 19.2343 20.9973 19.6184C21.009 20.0026 20.8752 20.3768 20.6231 20.6651C20.3711 20.9534 20.0197 21.1341 19.6403 21.1706C19.2609 21.207 18.882 21.0965 18.5805 20.8614L18.4395 20.7358L13.9395 16.1974C13.7064 15.9621 13.5566 15.6559 13.5135 15.3261L13.5 15.1279V7.56395C13.5 7.16273 13.658 6.77795 13.9393 6.49425C14.2206 6.21054 14.6022 6.05116 15 6.05116Z"
+                      fill="#F0F0F0"
+                    />
+                  </svg>
+                </div>
+                <input
+                 ref={timeInputRef}
+                  type="time"
+                  className="w-[400px] h-[40px] outline-none text-[#DFDFDF] placeholder:text-[#DFDFDF] font-inter font-[200] p-[10px]"
+                  placeholder={`${`${new Date().toLocaleTimeString()}`}`}
+                />
+              </div>
+            </div>
+            <div className="flex  justify-center  ">
+              <BookButton
+                text={"Book Cab"}
+                textSize={"18px"}
+                w={"120px"}
+                h={"40px"}
+              />
+            </div>
+          </div>
+
+          <div className=" h-[500px] flex flex-col justify-center items-center gap-[30px] mb-[70px]    ">
+            <div className="flex gap-[10px] items-center">
+              <h1 className="font-[600] text-[32px]">Make a call</h1>
+              <img src={Logo} alt="Logo" className="h-[39px] " />
+            </div>
+            <p className="text-[14px]">
+              Contact us for a quick and easy booking.
+            </p>
+            <p className="flex gap-[10px] items-center cursor-pointer "
+              onClick={() => window.open("tel:+919551114411")}
+            >
+              <span>
+                <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 62 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M49.6796 61.9995C46.9776 61.9995 43.1821 61.0224 37.4985 57.8476C30.5872 53.9726 25.2413 50.3951 18.3673 43.5404C11.7397 36.9182 8.51453 32.6308 4.00062 24.4184C-1.09881 15.146 -0.22953 10.2856 0.742186 8.20828C1.89939 5.72548 3.6075 4.24051 5.81532 2.76661C7.06935 1.94515 8.39642 1.24097 9.7797 0.66301C9.91813 0.6035 10.0469 0.546758 10.1617 0.495552C10.8469 0.186933 11.8851 -0.279457 13.2001 0.218763C14.0777 0.548142 14.8611 1.22212 16.0876 2.43308C18.6027 4.91311 22.0397 10.4364 23.3076 13.149C24.1589 14.9772 24.7223 16.184 24.7236 17.5375C24.7236 19.1221 23.9263 20.3441 22.9588 21.663C22.7774 21.9107 22.5975 22.1474 22.4231 22.3771C21.3697 23.7611 21.1385 24.161 21.2908 24.8751C21.5995 26.3103 23.9014 30.5825 27.6845 34.3565C31.4675 38.1306 35.6174 40.2867 37.0584 40.594C37.8031 40.7531 38.2114 40.5123 39.6399 39.4218C39.8448 39.2654 40.0552 39.1035 40.2753 38.9416C41.7508 37.8441 42.9163 37.0677 44.4639 37.0677H44.4722C45.819 37.0677 46.9721 37.6517 48.8823 38.6149C51.3739 39.8716 57.0644 43.2636 59.5601 45.781C60.7741 47.0044 61.4509 47.785 61.7818 48.661C62.2801 49.9799 61.8108 51.0137 61.5049 51.7057C61.4537 51.8205 61.3969 51.9465 61.3374 52.0863C60.7548 53.4668 60.0463 54.7908 59.221 56.0416C57.7495 58.2421 56.2588 59.9457 53.7699 61.104C52.492 61.7085 51.0933 62.0147 49.6796 61.9995Z"
+                    fill="#5EBD32"
+                  />
+                </svg>
+              </span>
+              <span className="text-[52px] font-[800] font-inter">
+                +91 9551114411
+              </span>
+            </p>
+
+            <div>
+              <button className="font-[Lilita_One] text-[20px] w-[200px] h-[52px] rounded-[20px] bg-[#00B0B0] text-white flex items-center justify-center gap-[20px] cursor-pointer"
+                onClick={() => window.open("https://wa.me/919551114411")}
+              >
+                <span>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.640234 14.8698C0.639531 17.3987 1.30328 19.868 2.56539 22.0445L0.519531 29.481L8.16391 27.4855C10.2782 28.6314 12.6472 29.2318 15.0545 29.232H15.0609C23.0079 29.232 29.477 22.7941 29.4804 14.8811C29.482 11.0467 27.9834 7.44102 25.2606 4.72833C22.5384 2.01587 18.9179 0.521281 15.0603 0.519531C7.11227 0.519531 0.643633 6.95709 0.640352 14.8698"
+                      fill="url(#paint0_linear_192_349)"
+                    />
+                    <path
+                      d="M0.125391 14.865C0.12457 17.4849 0.812109 20.0425 2.11922 22.297L0 30L7.91848 27.933C10.1003 29.1173 12.5568 29.7417 15.0564 29.7426H15.0628C23.295 29.7426 29.9965 23.0731 30 14.8769C30.0014 10.9047 28.4489 7.1694 25.6289 4.35953C22.8086 1.55001 19.0586 0.00163331 15.0628 0C6.82922 0 0.128672 6.66856 0.125391 14.865ZM4.84113 21.9087L4.54547 21.4415C3.30258 19.474 2.64656 17.2005 2.6475 14.8659C2.65008 8.05325 8.2193 2.51063 15.0675 2.51063C18.3839 2.51203 21.5006 3.79907 23.8448 6.13423C26.1889 8.46963 27.4788 11.5741 27.478 14.8759C27.475 21.6886 21.9056 27.2319 15.0628 27.2319H15.0579C12.8298 27.2307 10.6446 26.635 8.73891 25.5093L8.28539 25.2416L3.58641 26.4681L4.84113 21.9087Z"
+                      fill="url(#paint1_linear_192_349)"
+                    />
+                    <path
+                      d="M11.3294 8.65065C11.0498 8.03198 10.7556 8.01949 10.4897 8.00864C10.2719 7.99931 10.023 8.00001 9.77434 8.00001C9.52543 8.00001 9.12102 8.09323 8.77918 8.4648C8.437 8.83673 7.47278 9.73552 7.47278 11.5635C7.47278 13.3916 8.81024 15.1583 8.99668 15.4065C9.18336 15.6542 11.5787 19.5256 15.3723 21.0149C18.5251 22.2526 19.1667 22.0064 19.8509 21.9444C20.5353 21.8825 22.0592 21.0458 22.3701 20.1782C22.6813 19.3107 22.6813 18.567 22.588 18.4116C22.4947 18.2568 22.2458 18.1638 21.8725 17.9781C21.4993 17.7924 19.6643 16.8934 19.3222 16.7694C18.98 16.6455 18.7312 16.5836 18.4823 16.9557C18.2334 17.3271 17.5187 18.1638 17.3008 18.4116C17.0832 18.66 16.8654 18.6909 16.4922 18.5051C16.1188 18.3187 14.9168 17.9268 13.4907 16.6611C12.3812 15.6762 11.6321 14.46 11.4144 14.0879C11.1966 13.7165 11.3911 13.5151 11.5782 13.33C11.7459 13.1635 11.9516 12.8961 12.1384 12.6792C12.3245 12.4622 12.3866 12.3074 12.511 12.0596C12.6356 11.8116 12.5732 11.5946 12.4801 11.4087C12.3866 11.2229 11.6613 9.38529 11.3294 8.65065Z"
+                      fill="white"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_192_349"
+                        x1="1448.56"
+                        y1="2896.66"
+                        x2="1448.56"
+                        y2="0.519531"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#1FAF38" />
+                        <stop offset="1" stop-color="#60D669" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_192_349"
+                        x1="1500"
+                        y1="3000"
+                        x2="1500"
+                        y2="0"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#F9F9F9" />
+                        <stop offset="1" stop-color="white" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </span>
+                WHATSAPP
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*mobile device desigan*/}
+      <div className="  flex-col justify-center p-[20px] w-full gap-[120px] lg:hidden md:hidden sm:flex   ">
+        <div className="flex flex-col  gap-[20px] w-full ">
+          <div className="bg-black w-[400px] h-[50px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
             <div className="text-white w-[25px] h-[25px] pl-[10px] pt-[5px]">
               <svg
                 width="18"
@@ -25,11 +256,11 @@ export default function Contact() {
               </svg>
             </div>
             <input
-              className="w-[390px] h-[40px] outline-none text-white placeholder:text-white font-inter font-[200] p-[10px]"
+              className="w-[400px] h-[40px] outline-none text-white placeholder:text-white font-inter font-[200] p-[10px]"
               placeholder="Name"
             />
           </div>
-          <div className="bg-black w-[450px] h-[50px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
+          <div className="bg-black w-[400px] h-[50px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
             <div className="text-[#DFDFDF] w-[25px] h-[25px] pl-[10px] pt-[5px]">
               <svg
                 width="18"
@@ -45,11 +276,11 @@ export default function Contact() {
               </svg>
             </div>
             <input
-              className="w-[390px] h-[40px] outline-none text-[#DFDFDF] placeholder:text-[#DFDFDF] font-inter font-[200] p-[10px]"
+              className="w-[400px] h-[40px] outline-none text-[#DFDFDF] placeholder:text-[#DFDFDF] font-inter font-[200] p-[10px]"
               placeholder="Mobile number"
             />
           </div>
-          <div className="bg-black w-[450px] h-[180px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
+          <div className="bg-black w-[400px] h-[180px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
             <div className="text-[#DFDFDF] w-[40px] h-[155px] pl-[10px] pt-[5px] "></div>
             <div className="flex flex-col gap-[1px]">
               <div className="flex flex-col gap-[1px]">
@@ -74,8 +305,8 @@ export default function Contact() {
             </div>
             <div className="text-[#DFDFDF] w-[40px] h-[155px] pl-[10px] pt-[5px] "></div>
           </div>
-          <div className="w-[450px] flex justify-between">
-            <div className="bg-black w-[210px] h-[45px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
+          <div className="w-[400px] flex justify-between">
+            <div className="bg-black w-[180px] h-[45px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
               <div
                 className="text-[#DFDFDF] w-[25px] h-[25px] pl-[10px] pt-[5px] cursor-pointer"
                 onClick={() => dateInputRef.current.showPicker()}
@@ -98,17 +329,23 @@ export default function Contact() {
               <input
                 ref={dateInputRef}
                 type="date"
-                className="w-[390px] h-[40px] outline-none text-[#DFDFDF] placeholder:text-[#DFDFDF] font-inter font-[200] p-[10px]"
+                className="w-[400px] h-[40px] outline-none text-[#DFDFDF] placeholder:text-[#DFDFDF] font-inter font-[200] p-[10px]"
                 placeholder={`${new Date().toLocaleDateString()}`}
                 min={new Date().toISOString().split("T")[0]}
-                max={new Date(new Date().setFullYear(new Date().getFullYear() + 99))
+                max={
+                  new Date(
+                    new Date().setFullYear(new Date().getFullYear() + 99)
+                  )
                     .toISOString()
-                    .split("T")[0]}
-                  
+                    .split("T")[0]
+                }
               />
             </div>
-            <div className="bg-black w-[210px] h-[45px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
-              <div className="text-[#DFDFDF] w-[25px] h-[25px] pl-[10px] pt-[5px]">
+            <div className="bg-black w-[180px] h-[45px] rounded-[16px] p-[5px] flex items-center gap-[10px]">
+              <div
+                className="text-[#DFDFDF] w-[25px] h-[25px] pl-[10px] pt-[5px]"
+                onClick={() => timeInputRef.current.showPicker()}
+              >
                 <svg
                   width="18"
                   height="18"
@@ -127,13 +364,16 @@ export default function Contact() {
                 </svg>
               </div>
               <input
-              type="time"
-                className="w-[390px] h-[40px] outline-none text-[#DFDFDF] placeholder:text-[#DFDFDF] font-inter font-[200] p-[10px]"
+                ref={timeInputRef}
+                type="time"
+                className="w-[400px] h-[40px] outline-none text-[#DFDFDF] placeholder:text-[#DFDFDF] font-inter font-[200] p-[10px]"
                 placeholder={`${`${new Date().toLocaleTimeString()}`}`}
+                min="00:00"
+                max="23:59"
               />
             </div>
           </div>
-          <div className="flex  justify-center  ">
+          <div className="flex  justify-center w-[400px]  ">
             <BookButton
               text={"Book Cab"}
               textSize={"18px"}
@@ -143,19 +383,22 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className=" h-[500px] flex flex-col justify-center items-center gap-[30px] mb-[70px]    ">
+        <div className="  flex flex-col justify-center items-center gap-[30px]    ">
           <div className="flex gap-[10px] items-center">
-            <h1 className="font-[600] text-[32px]">Make a call</h1>
+            <h1 className="font-[600] text-[28px]">Make a call</h1>
             <img src={Logo} alt="Logo" className="h-[39px] " />
           </div>
           <p className="text-[14px]">
             Contact us for a quick and easy booking.
           </p>
-          <p className="flex gap-[10px] items-center ">
+          <p
+            className="flex gap-[10px] items-center "
+            onClick={() => window.open("tel:+919551114411")}
+          >
             <span>
               <svg
-                width="52"
-                height="52"
+                width="42"
+                height="42"
                 viewBox="0 0 62 62"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -166,18 +409,20 @@ export default function Contact() {
                 />
               </svg>
             </span>
-            <span className="text-[52px] font-[800] font-inter">
+            <span className="text-[26px] font-[800] font-inter">
               +91 9551114411
             </span>
           </p>
 
           <div>
-            {/* <button></button> */}
-            <button className="font-[Lilita_One] text-[20px] w-[200px] h-[52px] rounded-[20px] bg-[#00B0B0] text-white flex items-center justify-center gap-[20px] cursor-pointer">
+            <button
+              className="font-[Lilita_One] text-[20px] w-[200px] h-[52px] rounded-[20px] bg-[#00B0B0] text-white flex items-center justify-center gap-[20px] cursor-pointer"
+              onClick={() => window.open("https://wa.me/919551114411")}
+            >
               <span>
                 <svg
-                  width="30"
-                  height="30"
+                  width="32"
+                  height="32"
                   viewBox="0 0 30 30"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +470,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
       <Footer />
     </div>
   );
