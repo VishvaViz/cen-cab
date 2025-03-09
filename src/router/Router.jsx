@@ -150,7 +150,7 @@ export default function AppRouter() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/our-service" element={<OurService />} />
+              <Route path="/our-service" element={<Home />} />
               <Route path="/book-now" element={<BookNow />} />
             </Routes>
           </Suspense>

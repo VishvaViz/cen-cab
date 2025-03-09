@@ -11,10 +11,10 @@ export default function About() {
       transition={{ duration: 0.4, ease: "easeOut" }}
     >
       <div className="">
-        <div className="p-[85px]    w-full flex flex-col space-y-[140px] ">
+        <div className="p-[85px] w-full flex flex-col space-y-[140px] ">
           <div className="flex items-center gap-[20px]  ">
             <div className=" space-y-9">
-              <h1 className="text-[32px] font-[500] ">About Us</h1>
+              <h1 className="text-[32px] font-[500] sm:text-[22px] lg:text-[32px] md:text-[30px] ">About Us</h1>
               <p className="text-wrap">
                 Chennai cabs has been a trusted name in cab services,
                 established in 2016, offering safe, reliable, and comfortable
@@ -38,9 +38,9 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className=" p-[30px] flex space-x-[140px] items-center">
+          <div className=" w-full p-[30px] flex space-x-[140px] items-center">
             <img src={Taxi} alt="Taxi" className="h-[350px] " />
-            <div className="space-y-4">
+            <div className="space-y-4 w-full bg">
               <h1 className="text-[32px] font-[500] ">Join now</h1>
               <p className="text-[14px]">
                 Providing seamless transportation for the people who matter to
@@ -49,7 +49,7 @@ export default function About() {
               <BookButton
                 text={"Call now"}
                 textSize={"18px"}
-                w={"150px"}
+                w={"120px"}
                 h={"35px"}
               />
             </div>

@@ -137,7 +137,7 @@ export default function Contact() {
             <BookButton
               text={"Book Cab"}
               textSize={"18px"}
-              w={"150px"}
+              w={"120px"}
               h={"40px"}
             />
           </div>
