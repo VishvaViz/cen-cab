@@ -2,6 +2,7 @@ import BookButton from "../component/Button";
 import Logo from "../assets/cen-cab-Logo.png";
 import React from "react";
 import Footer from "../layouts/Footer";
+import sendWhatsAppMessage from "../utils/SendWhatsAppMessage";
 export default function Contact() {
   const dateInputRef = React.useRef(null);
   const timeInputRef = React.useRef(null);
@@ -146,6 +147,7 @@ export default function Contact() {
                 textSize={"18px"}
                 w={"120px"}
                 h={"40px"}
+                onClick={()=>sendWhatsAppMessage("Hi, I need assistance with my booking.")}
               />
             </div>
           </div>
@@ -379,6 +381,7 @@ export default function Contact() {
               textSize={"18px"}
               w={"120px"}
               h={"40px"}
+              onClick={()=>sendWhatsAppMessage("Hi, I need assistance with my booking.")}
             />
           </div>
         </div>
